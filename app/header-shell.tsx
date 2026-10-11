@@ -3,9 +3,7 @@
 import { useEffect, useRef, useState, type ReactNode } from "react";
 
 const links = [
-  { href: "#approach", label: "Approach" },
-  { href: "#expertise", label: "Expertise" },
-  { href: "#model", label: "Our Model" },
+  { href: "#top", label: "Home" },
   { href: "#contact", label: "Contact" },
 ];
 
