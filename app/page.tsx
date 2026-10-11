@@ -32,7 +32,7 @@ export default function Home() {
       <div className="hero-shade" aria-hidden="true" />
       <div className="hero-copy shell">
         <h1 id="hero-title">More Customers.<br />More Growth.<span>GUARANTEED.</span></h1>
-        <div className="hero-actions"><a className="button-primary" href="#contact">Discuss your business <span aria-hidden="true">↗</span></a><a className="hero-secondary" href="#approach">See our approach <span aria-hidden="true">↗</span></a></div>
+        <div className="hero-actions"><a className="button-primary" href="#contact">Discuss your business <span aria-hidden="true">↗</span></a></div>
       </div>
     </section>
     <section className="intro section-pad" id="approach"><div className="shell editorial-grid"><div><p className="eyebrow">A Different Approach</p><h2>Good marketing starts with <em>understanding</em> the business.</h2></div><div className="intro-prose"><p>Before we recommend a campaign, we do the work to understand what makes a business successful.</p><ul className="comma-list"><li>Its customers.</li><li>Its competitors.</li><li>Its products.</li><li>Its margins.</li><li>Its opportunities.</li></ul><p>Because the strongest advertising doesn&apos;t begin with a platform or a budget.</p><p>It begins with knowing what needs to be sold, who needs to buy it, and why they should choose you.</p></div></div></section>
