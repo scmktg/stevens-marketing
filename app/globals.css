@@ -88,3 +88,7 @@
 .brand-logo-image{display:block;width:auto;height:clamp(45px,6.5svh,72px);max-width:min(44vw,240px);object-fit:contain}
 .footer .brand-logo-image{height:clamp(66px,9vw,105px);max-width:min(70vw,290px)}
 @media(max-width:560px){.site-header .brand-logo-image{height:48px;max-width:52vw}}
+
+/* Give the sole hero CTA deliberate breathing room below GUARANTEED. */
+.cinematic-hero .hero-actions{margin-top:clamp(32px,5svh,70px)}
+@media(max-height:660px){.cinematic-hero .hero-actions{margin-top:clamp(18px,3svh,34px)}}
