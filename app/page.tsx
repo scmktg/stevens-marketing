@@ -1,4 +1,5 @@
 import ContactForm from "./contact-form";
+import HeaderShell from "./header-shell";
 
 const methodology = [
   { number: "01", title: "Research", detail: "We study your business, products, customers, competitors and market to identify where the greatest commercial opportunities exist." },
@@ -18,12 +19,12 @@ function Wordmark({ light = false }: { light?: boolean }) {
   return <span className={`wordmark script-wordmark${light ? " wordmark-light" : ""}`}><strong>Stevens</strong><span>Marketing</span></span>;
 }
 function Header() {
-  return <header className="site-header"><div className="shell header-inner">
+  return <HeaderShell><div className="shell header-inner">
     <a href="#top" className="brand-link" aria-label="Stevens Marketing, back to top"><Wordmark /></a>
     <nav className="desktop-nav" aria-label="Main navigation"><a href="#approach">Approach</a><a href="#expertise">Expertise</a><a href="#model">Our Model</a><a href="#contact">Contact</a></nav>
     <a className="header-cta" href="#contact">Let&apos;s talk <span aria-hidden="true">↗</span></a>
     <details className="mobile-menu"><summary aria-label="Toggle navigation">Menu <span aria-hidden="true">+</span></summary><nav aria-label="Mobile navigation"><a href="#approach">Approach</a><a href="#expertise">Expertise</a><a href="#model">Our Model</a><a href="#contact">Contact</a></nav></details>
-  </div></header>;
+  </div></HeaderShell>;
 }
 export default function Home() {
   return <><a className="skip-link" href="#main">Skip to content</a><div id="top" /><Header/><main id="main">
