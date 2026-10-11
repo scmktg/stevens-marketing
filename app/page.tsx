@@ -15,7 +15,7 @@ const capabilities = [
   ["Continuous Optimisation", "Testing, campaign refinement, conversion improvement and ongoing performance development."]
 ];
 function Wordmark({ light = false }: { light?: boolean }) {
-  return <span className={`wordmark${light ? " wordmark-light" : ""}`}><strong>STEVENS</strong><span>MARKETING</span></span>;
+  return <span className={`wordmark script-wordmark${light ? " wordmark-light" : ""}`}><strong>Stevens</strong><span>Marketing</span></span>;
 }
 function Header() {
   return <header className="site-header"><div className="shell header-inner">
@@ -27,16 +27,19 @@ function Header() {
 }
 export default function Home() {
   return <><a className="skip-link" href="#main">Skip to content</a><div id="top" /><Header/><main id="main">
-    <section className="hero shell" aria-labelledby="hero-title"><div className="hero-copy">
-      <p className="eyebrow"><span className="line-mark"/>Independent Marketing Consultancy</p>
-      <h1 id="hero-title">THE ART<br/>OF <em>SELLING.</em></h1>
-      <p className="hero-intro">Great advertising begins long before an ad is written.</p>
-      <p className="hero-description">We study your business, understand your customers, analyse the competition, and build campaigns designed to deliver measurable commercial results.</p>
-      <div className="hero-actions"><a className="button-primary" href="#contact">Discuss your business <span aria-hidden="true">↗</span></a><a className="text-link" href="#approach">Explore our approach <span aria-hidden="true">↗</span></a></div>
-    </div><div className="hero-art" role="img" aria-label="Editorial monogram: Stevens Marketing">
-      <div className="hero-art-inner"><span className="art-overline">S · M</span><div className="art-initial">S<span>.</span></div><div className="art-caption">Independent thinking.<br/>Commercial outcomes.</div></div>
-      <p className="art-note">A mark of considered advertising</p>
-    </div></section>
+    <section className="hero cinematic-hero" aria-labelledby="hero-title">
+      <video className="hero-video" autoPlay muted loop playsInline preload="none" aria-hidden="true" tabIndex={-1}>
+        <source src="https://videos.pexels.com/video-files/5651780/5651780-hd_1920_1080_25fps.mp4" type="video/mp4" />
+      </video>
+      <div className="hero-shade" aria-hidden="true" />
+      <div className="hero-copy shell">
+        <p className="hero-kicker">Independent marketing. Measurable results.</p>
+        <h1 id="hero-title">More Customers.<br />More Growth.<span>GUARANTEED.</span></h1>
+        <p className="hero-description">Research-led campaigns. Sharper messaging. Performance-based partnerships built around agreed commercial results.</p>
+        <div className="hero-actions"><a className="button-primary" href="#contact">Discuss your business <span aria-hidden="true">↗</span></a><a className="hero-secondary" href="#approach">See our approach <span aria-hidden="true">↗</span></a></div>
+      </div>
+      <p className="hero-footnote">Commission is based on outcomes agreed with each client. Results depend on the partnership terms.</p>
+    </section>
     <section className="intro section-pad" id="approach"><div className="shell editorial-grid"><div><p className="eyebrow">A Different Approach</p><h2>Good marketing starts with <em>understanding</em> the business.</h2></div><div className="intro-prose"><p>Before we recommend a campaign, we do the work to understand what makes a business successful.</p><ul className="comma-list"><li>Its customers.</li><li>Its competitors.</li><li>Its products.</li><li>Its margins.</li><li>Its opportunities.</li></ul><p>Because the strongest advertising doesn&apos;t begin with a platform or a budget.</p><p>It begins with knowing what needs to be sold, who needs to buy it, and why they should choose you.</p></div></div></section>
     <section className="method section-pad"><div className="shell"><p className="eyebrow">Our Approach</p><div className="section-heading"><h2>Research. Strategy.<br/>Execution. <em>Refinement.</em></h2><p>Four disciplines. One commercial purpose.</p></div><div className="indexed-list">{methodology.map(item=><div className="indexed-row" key={item.number}><span className="index-number">{item.number}</span><h3>{item.title}</h3><p>{item.detail}</p></div>)}</div></div></section>
     <section id="expertise" className="expertise section-pad"><div className="shell"><div className="editorial-grid"><div><p className="eyebrow">Expertise</p><h2>Every decision should have a <em>commercial purpose.</em></h2></div><p className="section-aside">From the first question we ask to the final campaign adjustment, our work is grounded in what matters to your business.</p></div><div className="capabilities">{capabilities.map(([title,description],i)=><div className="capability" key={title}><span className="small-index">{String(i+1).padStart(2,"0")}</span><h3>{title}</h3><p>{description}</p></div>)}</div></div></section>
