@@ -5,3 +5,34 @@
 @media(max-width:800px){.header-inner{min-height:86px}.desktop-nav,.header-cta{display:none}.mobile-menu{display:block;position:relative}.mobile-menu summary{list-style:none;cursor:pointer;display:flex;align-items:center;gap:12px;font-size:11px;text-transform:uppercase;letter-spacing:.15em;padding:14px 0}.mobile-menu summary::-webkit-details-marker{display:none}.mobile-menu[open] summary span{transform:rotate(45deg)}.mobile-menu nav{position:absolute;right:0;top:100%;background:var(--ivory);border:1px solid var(--rule);min-width:210px;box-shadow:0 12px 30px #00000012;display:flex;flex-direction:column}.mobile-menu nav a{padding:17px 20px;border-bottom:1px solid var(--rule);font-size:14px}.hero{grid-template-columns:1fr;min-height:auto}.hero-copy{padding:100px 0 66px}.hero .eyebrow{margin-bottom:50px}.hero h1{font-size:clamp(65px,12vw,110px);margin-bottom:47px}.hero-art{min-height:390px;max-height:540px;margin:0 0 65px}.hero-art-inner{height:86%;width:45%;min-width:260px}.art-initial{font-size:210px}.editorial-grid,.partnership-grid,.contact-grid{grid-template-columns:1fr;gap:34px}.intro-prose,.section-aside,.partnership-grid>div:nth-child(2),.contact-form{padding-top:0}.section-heading{align-items:flex-start;flex-direction:column}.capabilities{column-gap:6%}.contact-form{max-width:680px}.footer-bottom{flex-wrap:wrap}.section-pad{padding-top:100px;padding-bottom:100px}}
 @media(max-width:560px){:root{--page:22px}.wordmark{font-size:21px}.hero-copy{padding-top:85px}.hero h1{font-size:clamp(54px,12.4vw,72px)}.hero .eyebrow{font-size:9px;letter-spacing:.14em}.hero-description{font-size:14px}.hero-actions{gap:22px;align-items:flex-start;flex-direction:column}.hero-art{min-height:340px;margin-bottom:40px}.hero-art-inner{min-width:228px}.art-initial{font-size:180px}.section-pad{padding-top:82px;padding-bottom:82px}h2{font-size:clamp(39px,10vw,60px)}.intro-prose p,.contact-grid>div>p:not(.eyebrow){font-size:15px}.indexed-row{grid-template-columns:50px 1fr;gap:10px;padding:27px 0}.indexed-row h3{font-size:30px}.indexed-row p{grid-column:2;font-size:14px}.section-heading{margin-bottom:45px}.section-heading p{white-space:normal}.capabilities{grid-template-columns:1fr;margin-top:35px}.partnership h2,.contact h2{font-size:clamp(50px,12vw,74px)}.philosophy blockquote{font-size:clamp(32px,8vw,46px)}.form-row{grid-template-columns:1fr;gap:27px}.footer-top{flex-direction:column;gap:55px;padding-bottom:60px}.footer-top .wordmark{font-size:36px}.footer-bottom{align-items:flex-start;flex-direction:column;gap:24px}.footer nav{flex-wrap:wrap;gap:18px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition-duration:.01ms!important;animation-duration:.01ms!important}}
+
+
+/* Cinematic homepage: editorial layout below the fold remains unchanged. */
+@import url('https://fonts.googleapis.com/css2?family=Italianno&display=swap');
+.site-header{background:#111614;border-bottom:1px solid #ffffff24}
+.site-header .header-inner{min-height:96px}
+.site-header .brand-link,.site-header .desktop-nav a,.site-header .header-cta,.site-header .mobile-menu summary{color:#fff}
+.site-header .header-cta{border-left-color:#ffffff42}
+.site-header .desktop-nav a:hover,.site-header .header-cta:hover{color:#dbb2b7}
+.script-wordmark{display:inline-flex;flex-direction:row;align-items:baseline;gap:12px;font-family:"Italianno","Brush Script MT",cursive;font-weight:400;line-height:1;letter-spacing:0;font-size:clamp(37px,3.9vw,62px);white-space:nowrap}
+.script-wordmark strong{font-weight:400}
+.script-wordmark span{color:#a61926;font-size:1.12em;letter-spacing:0;margin:0}
+.footer .script-wordmark{font-size:clamp(42px,5vw,72px)}
+.cinematic-hero{position:relative;isolation:isolate;display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:min(840px,calc(100svh - 96px));background:#101915;overflow:hidden;text-align:center;color:#fff}
+.hero-video,.hero-shade{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
+.hero-video{z-index:-2;object-fit:cover;object-position:center center}
+.hero-shade{z-index:-1;background:linear-gradient(180deg,rgba(6,13,11,.82),rgba(7,15,13,.76) 48%,rgba(6,12,10,.88))}
+.cinematic-hero .hero-copy{position:relative;z-index:1;display:flex;align-items:center;padding-top:clamp(100px,12vh,170px);padding-bottom:clamp(110px,13vh,185px);padding-right:var(--page);width:100%}
+.cinematic-hero .hero-kicker{font-size:11px;letter-spacing:.24em;text-transform:uppercase;font-weight:700;color:#e3dddd;margin:0 0 42px}
+.cinematic-hero h1{color:#fff;font-size:clamp(56px,7vw,118px);line-height:1.04;letter-spacing:-.068em;white-space:normal;font-weight:800;margin:0;text-wrap:balance}
+.cinematic-hero h1 span{display:block;color:#a61926;letter-spacing:-.045em;font-size:.84em;line-height:1.12;margin-top:clamp(40px,6vw,88px);font-weight:900}
+.cinematic-hero .hero-description{font-size:clamp(14px,1.2vw,17px);color:#eee8e5;max-width:600px;text-align:center;line-height:1.7;margin:clamp(30px,4vw,55px) auto 30px}
+.cinematic-hero .hero-actions{justify-content:center}
+.cinematic-hero .button-primary{background:#801522;border-color:#801522}
+.cinematic-hero .button-primary:hover{background:#a61926}
+.hero-secondary{font-size:11px;text-transform:uppercase;letter-spacing:.13em;font-weight:700;border-bottom:1px solid #ffffff80;padding:18px 0;display:inline-flex;gap:16px;align-items:center}
+.hero-secondary:hover{color:#e8bac2}
+.hero-footnote{position:absolute;bottom:18px;left:var(--page);right:var(--page);font-size:10px;color:#d0cac6;line-height:1.45;margin:0;letter-spacing:.025em}
+@media(max-width:800px){.site-header .header-inner{min-height:82px}.site-header .mobile-menu nav{background:#151917;border-color:#ffffff40}.site-header .mobile-menu nav a{color:#fff;border-bottom-color:#ffffff25}.cinematic-hero{min-height:760px}.cinematic-hero .hero-copy{padding-top:100px;padding-bottom:115px}.cinematic-hero h1{font-size:clamp(47px,10vw,78px)}}
+@media(max-width:560px){.script-wordmark{font-size:39px;gap:7px}.cinematic-hero{min-height:690px}.cinematic-hero .hero-kicker{font-size:9px;letter-spacing:.15em;margin-bottom:32px}.cinematic-hero h1{font-size:clamp(43px,10.5vw,60px)}.cinematic-hero h1 span{margin-top:44px;font-size:.78em}.cinematic-hero .hero-actions{align-items:center;gap:12px}.cinematic-hero .hero-description{font-size:14px}.hero-footnote{font-size:9px}}
+@media(prefers-reduced-motion:reduce){.hero-video{display:none}}
