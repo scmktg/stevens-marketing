@@ -83,3 +83,8 @@
 @media(max-height:660px){.cinematic-hero .hero-copy{padding-top:72px;padding-bottom:48px}.cinematic-hero h1{font-size:clamp(29px,min(6.5vw,7vh),70px)}.cinematic-hero h1 span{margin-top:8px}.cinematic-hero .hero-description{margin:8px auto;font-size:12px}.cinematic-hero .hero-kicker{margin-bottom:8px}.cinematic-hero .hero-actions .button-primary{min-height:40px}.cinematic-hero .hero-actions .hero-secondary{padding:10px 0}.fullscreen-nav-links a{padding:10px 0}}
 @media(max-height:490px){.cinematic-hero{height:auto;min-height:100svh}.cinematic-hero .hero-copy{padding-bottom:65px}.cinematic-hero .hero-footnote{bottom:8px}}
 @media(prefers-reduced-motion:reduce){.fullscreen-nav-links a,.nav-trigger-bars i{transition:none}}
+
+/* Image-based brand identity replaces the script wordmark. */
+.brand-logo-image{display:block;width:auto;height:clamp(45px,6.5svh,72px);max-width:min(44vw,240px);object-fit:contain}
+.footer .brand-logo-image{height:clamp(66px,9vw,105px);max-width:min(70vw,290px)}
+@media(max-width:560px){.site-header .brand-logo-image{height:48px;max-width:52vw}}
