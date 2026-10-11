@@ -21,9 +21,6 @@ function Wordmark({ light = false }: { light?: boolean }) {
 function Header() {
   return <HeaderShell><div className="shell header-inner">
     <a href="#top" className="brand-link" aria-label="Stevens Marketing, back to top"><Wordmark /></a>
-    <nav className="desktop-nav" aria-label="Main navigation"><a href="#approach">Approach</a><a href="#expertise">Expertise</a><a href="#model">Our Model</a><a href="#contact">Contact</a></nav>
-    <a className="header-cta" href="#contact">Let&apos;s talk <span aria-hidden="true">↗</span></a>
-    <details className="mobile-menu"><summary aria-label="Toggle navigation">Menu <span aria-hidden="true">+</span></summary><nav aria-label="Mobile navigation"><a href="#approach">Approach</a><a href="#expertise">Expertise</a><a href="#model">Our Model</a><a href="#contact">Contact</a></nav></details>
   </div></HeaderShell>;
 }
 export default function Home() {
