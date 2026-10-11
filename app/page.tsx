@@ -35,10 +35,10 @@ export default function Home() {
       <div className="hero-copy shell">
         <p className="hero-kicker">Independent marketing. Measurable results.</p>
         <h1 id="hero-title">More Customers.<br />More Growth.<span>GUARANTEED.</span></h1>
-        <p className="hero-description">Research-led campaigns. Sharper messaging. Performance-based partnerships built around agreed commercial results.</p>
+        <p className="hero-description">Research-led campaigns. Sharper messaging. We only earn our commission when we deliver the results agreed with you.</p>
         <div className="hero-actions"><a className="button-primary" href="#contact">Discuss your business <span aria-hidden="true">↗</span></a><a className="hero-secondary" href="#approach">See our approach <span aria-hidden="true">↗</span></a></div>
       </div>
-      <p className="hero-footnote">Commission is based on outcomes agreed with each client. Results depend on the partnership terms.</p>
+      <p className="hero-footnote">Our guarantee: no commission unless we achieve the agreed results. Advertising and third-party costs are separate.</p>
     </section>
     <section className="intro section-pad" id="approach"><div className="shell editorial-grid"><div><p className="eyebrow">A Different Approach</p><h2>Good marketing starts with <em>understanding</em> the business.</h2></div><div className="intro-prose"><p>Before we recommend a campaign, we do the work to understand what makes a business successful.</p><ul className="comma-list"><li>Its customers.</li><li>Its competitors.</li><li>Its products.</li><li>Its margins.</li><li>Its opportunities.</li></ul><p>Because the strongest advertising doesn&apos;t begin with a platform or a budget.</p><p>It begins with knowing what needs to be sold, who needs to buy it, and why they should choose you.</p></div></div></section>
     <section className="method section-pad"><div className="shell"><p className="eyebrow">Our Approach</p><div className="section-heading"><h2>Research. Strategy.<br/>Execution. <em>Refinement.</em></h2><p>Four disciplines. One commercial purpose.</p></div><div className="indexed-list">{methodology.map(item=><div className="indexed-row" key={item.number}><span className="index-number">{item.number}</span><h3>{item.title}</h3><p>{item.detail}</p></div>)}</div></div></section>
