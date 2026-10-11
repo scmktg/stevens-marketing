@@ -53,7 +53,7 @@ export default function HeaderShell({ children }: { children: ReactNode }) {
         <span className="nav-trigger-bars" aria-hidden="true"><i/><i/></span><span>Menu</span>
       </button>
       {open && <div id="fullscreen-navigation" className="fullscreen-navigation" role="dialog" aria-modal="true" aria-label="Main navigation">
-        <div className="fullscreen-nav-top"><span className="fullscreen-nav-label">Stevens Marketing</span><button ref={closeRef} type="button" className="nav-close" onClick={() => setOpen(false)} aria-label="Close navigation"><span aria-hidden="true">×</span> Close</button></div>
+        <div className="fullscreen-nav-top"><span className="fullscreen-nav-label">Navigation</span><button ref={closeRef} type="button" className="nav-close" onClick={() => setOpen(false)} aria-label="Close navigation"><span aria-hidden="true">×</span> Close</button></div>
         <nav className="fullscreen-nav-links" aria-label="Main navigation">
           {links.map((link, i) => <a key={link.href} href={link.href} onClick={() => setOpen(false)}><small>0{i + 1}</small>{link.label}<span aria-hidden="true">↗</span></a>)}
         </nav>
